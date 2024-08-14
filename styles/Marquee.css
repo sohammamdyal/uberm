@@ -1,0 +1,31 @@
+/* Marquee.css */
+
+.marquee {
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide the overflowing logos */
+    background-color: #fff; /* Optional background color */
+    margin-top: 100px;
+  }
+  
+  .marquee-inner {
+    display: flex; /* Align logos in a row */
+    width: fit-content; /* Width to contain all images */
+    animation: marquee 15s linear infinite; /* Animation for scrolling */
+    margin-bottom: 150px;
+  }
+  
+  .marquee-inner img {
+    height: 90px; /* Adjust the logo size */
+    padding: 0 10px; /* Optional spacing between logos */
+    object-fit: contain;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%); /* Start the animation off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* End the animation off-screen to the left */
+    }
+  }
+  

@@ -1,0 +1,59 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .searchBar {
+    margin-bottom: 20px;
+  }
+  
+  .tableContainer {
+    overflow-x: auto; /* Make table scrollable horizontally if needed */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .th,
+  .td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .th {
+    background-color: #f2f2f2;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination .button {
+    margin: 0 5px;
+  }
+  
+  .exportButton {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .logoutButton {
+    margin-left: 90px;
+    padding: 10px 20px;
+    font-size: 16px;
+   
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logoutButton:hover {
+    background-color: #444;
+  }

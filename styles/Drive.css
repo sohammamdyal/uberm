@@ -1,0 +1,116 @@
+.App {
+    font-family: 'Uber Move', sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .why-drive {
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px;
+   
+  }
+  
+  .why-drive h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Uber Move', sans-serif;
+  }
+  
+  .illustration img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .benefits {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .benefit-item {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .benefit-item p {
+    color: #666;
+  }
+
+  /* 2nd session */
+  .sign-up-requirements {
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px;
+   
+  }
+  
+  .sign-up-requirements h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .tabs button.active {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+  }
+  
+  .requirements {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .column {
+    width: 25%;
+    text-align: left;
+  }
+  
+  .column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .column ul {
+    list-style-type: none;
+    padding: 0;
+    color: #666;
+  }
+  
+  .column ul li {
+    margin-bottom: 10px;
+  }
+  

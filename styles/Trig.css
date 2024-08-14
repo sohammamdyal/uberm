@@ -1,0 +1,23 @@
+.text-scroll-container {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    position: relative;
+  }
+  
+  .text-scroll-content {
+    display: flex; /* Lay out children in a row */
+    width: fit-content; /* Width based on content */
+  }
+  
+  .text-item {
+    min-width: 100vw; /* Each item takes up full viewport width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 100vh;
+    background-color: lightgrey;
+    border-right: 2px solid black; /* Optional: visual separation */
+  }
+  

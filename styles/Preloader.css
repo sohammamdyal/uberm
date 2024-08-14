@@ -1,0 +1,116 @@
+.preloader{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    color:#fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.preloader .texts-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    width: 900px;
+    font-size: 120px;
+    font-weight: 800;
+    overflow: hidden;
+    color:#fff;
+
+}
+
+
+/*  */
+
+/* .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+} */
+/* span{
+    font-size: 3em;
+} */
+/* .animation{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Uber Move', sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color:#fff;
+    display: inline-block;
+    animation: fadeIn 1.5s forwards;
+    overflow: hidden;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.785,0.135,0.15, 0.86);
+}
+.first{
+    display: inline-block;
+    animation: firstspan 1.5s forwards cubic-bezier(0.785,0.135,0.15, 0.86);
+    background: #000;
+    z-index: 1;
+    position: relative;
+    font-weight: 500;
+}
+.slide{
+    display: inline-flex;
+    overflow: hidden;
+}
+.second{
+    font-weight: 100;
+    z-index: -1;
+    display: inline-block;
+    animation: secondspan 1.5s forwards cubic-bezier(0.785,0.135,0.15, 0.86);
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transition-timing-function: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transition-timing-function: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transition-timing-function: scale(1);
+    }
+}
+
+@keyframes firstspan{
+    0%{
+        transform: translateX(50%);
+    }
+    60%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes secondspan{
+    0%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+} */

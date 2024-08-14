@@ -1,0 +1,283 @@
+@import url('https://fonts.cdnfonts.com/css/uber-move-2');
+
+
+
+.slideIn{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: bottom;
+
+}
+
+.slideOut{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: top;
+  
+}
+.container {
+    max-width: 1000px;
+    margin: 70px;
+    padding: 20px;
+    background-color: #FFF;
+   
+  }
+  
+  .main {
+    
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Uber Move', sans-serif;
+  }
+  
+  .description {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .row{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    overflow-x: hidden;
+    padding: 5rem 0;
+  }
+  .imgWrapper{
+    overflow: hidden;
+  }
+  .row .imgWrapper img{
+    width: 100%;
+    height: 100%;
+    margin-left: 60px;
+    object-fit: cover;
+    transition: 0.3s;
+    border-radius:20px ;
+  }
+  
+
+
+  .contentWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+  }
+ .row .contentWrapper span.textWrapper{
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+margin-bottom: 20px;
+  }
+.row .contentWrapper span.textWrapper span{
+    display: inline-block;
+    width: 70px;
+    height: 5px;
+}
+
+.row .contentWrapper h2{
+    font-size: 40px;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    font-family: 'Uber Move', sans-serif;
+}
+.row .contentWrapper p{
+    font-size: 18px;
+    padding-left: 40px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+.row .contentWrapper a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    pad: 15px 40px;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.rideOptions {
+  text-align: center;
+  padding: 20px;
+}
+
+.rideOptions h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.rideOptions p {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.links {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0073b1; /* Uber's brand color */
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  gap: 170px;
+}
+
+.option {
+  text-align: center;
+  max-width: 200px;
+}
+
+.option img {
+  width: 100%;
+  height: auto;
+}
+
+.option h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.option p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.option a {
+  text-decoration: none;
+  color: #0073b1; /* Uber's brand color */
+}
+
+.movingCitiesForward {
+  text-align: center;
+  padding: 20px;
+}
+
+.movingCitiesForward h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  text-align: left;
+  font-family: 'Uber Move', sans-serif;
+}
+
+.optionSt {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.optionN {
+  text-align: left;
+  max-width: 400px;
+}
+
+.optionN Image {
+  width: 100%;
+  height: auto;
+
+  margin-bottom: 10px;
+}
+
+.optionN h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.optionN p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.optionN a {
+  text-decoration: none;
+  color: #0073b1; /* Uber's brand color */
+}
+
+/* help */
+
+.uberSupport {
+  text-align: center;
+  padding: 20px;
+}
+
+.headerR {
+
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  color: #000;
+}
+
+.headerR h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color:#FFF;
+}
+
+.headerR p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color:#FFF;
+}
+
+.supportOptions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.supportOption {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  width: 150px;
+}
+
+.supportOption Image {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.supportOption h2 {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+

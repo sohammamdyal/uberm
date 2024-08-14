@@ -1,0 +1,363 @@
+"use client"
+import React from 'react'
+import Head from 'next/head';
+import Image from 'next/image';
+import uberB from './../../public/UberComfort.png'
+import uberBl from './../../public/Black_v1.png'
+import uberBll from './../../public/UberXL_New.png'
+import UberBan from './../../public/uberbanner.jpeg';
+import styles from './../../app/styles/Home.module.css'
+import style from './../../app/styles/Para.module.css'
+import uberTra from './../../public/transit.jpg';
+import uberheal from './../../public/heal3.jpg';
+import aboutBg from './../../public/uberbanner.jpeg'
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import {CoolMode } from './../../components/cool'
+import { useEffect, useRef, useState } from 'react';
+import PreloaderOffer from './../../components/PreloaderOffer'
+import Marquee from "./../../components/Marquee";
+import Lenis from '@studio-freight/lenis'
+import { useTransform, useScroll, motion } from 'framer-motion';
+import insights1 from './../../public/insights1.png'
+import insights2 from './../../public/insights2.jpeg'
+import insights3 from './../../public/insights3.jpeg'
+import AnimCursor from './../../components/AnimCoursor';
+import './../../styles/Glob.css'
+const images = [
+  "1.jpg",
+  "2.jpg",
+  "3.jpg",
+  "4.jpg",
+  "5.jpg",
+  "6.jpg",
+  "7.jpg",
+  "8.jpg",
+  "9.jpg",
+  "10.jpg",
+  "11.jpg",
+  "12.jpg",
+]
+
+const insightsPublicationItems = [
+  {
+     id: 1,
+     title: "Sales calls?  Oh no!👀",
+     src: insights1
+  },
+  {
+     id: 2,
+     title: "Are you trying to be the main character?",
+     src: insights2
+  },
+  {
+     id: 3,
+     title: "New Top 7",
+     src: insights3
+  },
+];
+export default function page() {
+    useEffect(()=>{
+		AOS.init({duration:2000});
+	},[]);
+    const gallery = useRef(null);
+  const [dimension, setDimension] = useState({width:0, height:0});
+
+  const { scrollYProgress } = useScroll({
+    target: gallery,
+    offset: ['start end', 'end start']
+  })
+  const { height } = dimension;
+  const y = useTransform(scrollYProgress, [0, 1], [0, height * 2])
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3])
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25])
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3])
+
+  useEffect( () => {
+    const lenis = new Lenis()
+
+    const raf = (time) => {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    const resize = () => {
+      setDimension({width: window.innerWidth, height: window.innerHeight})
+    }
+
+    window.addEventListener("resize", resize)
+    requestAnimationFrame(raf);
+    resize();
+
+    return () => {
+      window.removeEventListener("resize", resize);
+    }
+  }, [])
+
+    return (
+        <div>
+          <AnimCursor/>
+            <PreloaderOffer/>
+            <section className="w-full bg-[#004d40] padding-y rounded-t-[20px]">
+			<div className="w-full bg-marquee z-10 relative rounded-t-[20px]">
+				<Marquee
+					title="uber offers"
+					className="pb-[50px] lg:pb-[40px] md:pb-[30px] sm:pb-[20px] xm:pb-[15px] text-[540px] leading-[330px] lg:text-[380px] lg:leading-[240px] md:text-[300px] md:leading-[160px] sm:text-[230px] sm:leading-[140px] xm:text-[130px] xm:leading-[80px]"
+				/>
+			</div>
+			<div className="w-full py-[10px]">
+  <div className="w-full flex flex-col sm:flex-row justify-between gap-0">
+    <div className="flex-shrink-0">
+      <h3 className="paragraph font-medium text-white font-NeueMontreal">
+        Latest publication
+      </h3>
+    </div>
+    <div className="w-full flex flex-wrap justify-end gap-1 sm:gap-0 sm:flex-row">
+          {insightsPublicationItems.map((item) => (
+            <div
+              className="flex-grow max-w-[300px] flex flex-col items-center sm:items-start rounded-[20px] overflow-hidden"
+              key={item.id}
+            >
+              <div className="group overflow-hidden rounded-[20px] w-[250px] h-[250px]">
+                <Image
+                  src={item.src}
+                  alt={item.title}
+                  width={300}
+                  height={300}
+                  className="w-full h-full object-cover group-hover:scale-[1.09] transform duration-[1s] ease-[.4,0,.2,1]"
+                  data-aos="fade-right"/>
+              </div>
+              <div className="flex gap-2 items-center mt-2">
+                <span className="w-[10px] h-[10px] rounded-full bg-white" />
+                <h4 className="text-white text-xs sm:text-sm font-medium uppercase font-NeueMontreal">
+                  {item.title}
+                </h4>
+              </div>
+            </div>
+          ))}
+        </div>
+  </div>
+</div>
+
+
+		</section>
+            <div className={styles.container}>
+                <Head>
+                    <title>CreateNext App</title>
+                    <meta name="description" content="Generated by create next app" />
+                    <link rel="icon" href="/favicon.ico" />
+                </Head>
+                
+
+
+                <main className={styles.main}>
+                    <h1 className={styles.title} data-aos="fade-right">
+                        Uber’s technology offerings
+                    </h1>
+
+                    <p className={styles.description} data-aos="fade-right">
+                        Changing how people can request rides and get from point A to point B is just the beginning.
+                    </p>
+                    <CoolMode >
+      
+                    <button data-aos="fade-right" class="bg-black hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded">
+                        Explore More
+                    </button>
+                    </CoolMode>
+
+                </main>
+
+                {/* offers start */}
+                
+                {/* offers end */}
+
+                <main className={styles.main} style={{ marginTop: 90 }}>
+
+                    {/* <h1 className={styles.title} data-aos="fade-right">
+                        Uber’s technology offerings
+                    </h1>
+                    <p data-aos="fade-right" className={styles.description}>
+                        Request a ride, hop in, and go.
+                    </p> */}
+
+                    {/* <div className={styles.rideOptions}>
+                        <h1 data-aos="fade-right">Uber's most popular ride options</h1>
+
+
+                        <div className={styles.options}>
+                            <div className={styles.option} data-aos="fade-right">
+                                <Image src={uberB} alt="UberX" />
+                                <h2>UberX</h2>
+                                <p>Affordable rides, all to yourself</p>
+                                <p class="text-lg m-6 group relative w-max">
+                                    <span>Learn More</span>
+                                    <span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-black group-hover:w-full"></span>
+                                </p>
+                            </div>
+                            <div className={styles.option} data-aos="fade-down">
+                                <Image src={uberBl} alt="UberX Share" />
+                                <h2>UberX Share</h2>
+                                <p>Share the ride with up to one co-rider at a time</p>
+                                <p class="text-lg m-6 group relative w-max">
+                                    <span>Learn More</span>
+                                    <span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-black group-hover:w-full"></span>
+                                </p>
+                            </div>
+                            <div className={styles.option} data-aos="fade-left">
+                                <Image src={uberBll} alt="Uber Comfort" />
+                                <h2>Uber Comfort</h2>
+                                <p>Newer cars with extra legroom</p>
+                                <p class="text-lg m-6 group relative w-max">
+                                    <span>Learn More</span>
+                                    <span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-black group-hover:w-full"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div> */}
+                    <main className={style.main}>
+      <div className={style.spacer}></div>
+      <div ref={gallery} className={style.gallery}>
+        <Column images={[images[0], images[1], images[2]]} y={y}/>
+        <Column images={[images[3], images[4], images[5]]} y={y2}/>
+        <Column images={[images[6], images[7], images[8]]} y={y3}/>
+        <Column images={[images[9], images[10], images[11]]} y={y4}/>
+      </div>
+      <div className={style.spacer}></div>
+    </main>
+
+
+                    <div className={styles.movingCitiesForward}>
+                        <h1 data-aos="fade-right">Moving cities forward, together</h1>
+                        <div className={styles.optionSt}>
+                            <div className={styles.optionN} data-aos="fade-right">
+                                <Image  src={uberTra} alt="Improving public transportation" style={{borderRadius:20}} />
+                                <h2 >Helping to improve public transportation for all</h2>
+                                <p>
+                                    Uber is committed to helping cities around the world make public transportation more accessible, equitable, and efficient.
+                                </p>
+                                <p class="text-lg m-6 group relative w-max">
+                                    <span>Learn More About Uber Transit</span>
+                                    <span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-black group-hover:w-full"></span>
+                                </p>
+                            </div>
+                            <div className={styles.optionN} data-aos="fade-left">
+                                <Image src={uberheal} alt="Access to care for those in need" style={{borderRadius:20}}  />
+                                <h2>Providing access to care for those in need</h2>
+                                <p>
+                                    We've partnered with healthcare organizations to provide their members and patients with access to care by offering them flexible ride-scheduling options. Healthcare professionals can schedule rides for patients and caregivers going to and from the care they need, all from a single dashboard.
+                                </p>
+                                <p class="text-lg m-6 group relative w-max">
+                                    <span>Learn More About Uber Health</span>
+                                    <span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-black group-hover:w-full"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+
+
+            </div>
+            <div className="bg-black h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
+				<div className="p-5 " data-aos="fade-right">
+					<ul>
+						<p className="text-white font-bold text-3xl pb-6">
+							<span className="text-white">Uber</span>
+						</p>
+						<div className="flex gap-6 pb-5">
+							<FaInstagram className="text-2xl cursor-pointer text-white hover:text-yellow-600" />
+							<FaTwitter className="text-2xl cursor-pointer text-white hover:text-blue-600" />
+							<FaLinkedin className="text-2xl cursor-pointer text-white hover:text-blue-600" />
+							<FaYoutube className="text-2xl cursor-pointer text-white hover:text-red-600" />
+						</div>
+					</ul>
+				</div>
+				<div className="p-5" data-aos="fade-up">
+					<ul>
+						<p className="text-white font-bold text-2xl pb-4">Product</p>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Stocks
+						</li>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Futures & Options
+						</li>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Mutual Funds
+						</li>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Fixed deposits
+						</li>
+					</ul>
+				</div>
+				<div className="p-5" data-aos="fade-up">
+					<ul>
+						<p className="text-white font-bold text-2xl pb-4">Company</p>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							About
+						</li>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Products
+						</li>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Pricing
+						</li>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Careers
+						</li>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Press & Media
+						</li>
+					</ul>
+				</div>
+				<div className="p-5" data-aos="fade-up">
+					<ul>
+						<p className="text-white font-bold text-2xl pb-4">Support</p>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Contact
+						</li>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Support Portals
+						</li>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							List Of Charges
+						</li>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Downloads & Resources
+						</li>
+						<li className="text-white text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Videos
+						</li>
+					</ul>
+				</div>
+			</div>
+
+        </div>
+    )
+};
+
+const Column = ({images, y}) => {
+    return (
+      <motion.div 
+        className={style.column}
+        style={{y}}
+        >
+        {
+          images.map( (src, i) => {
+            return <div key={i} className={style.imageContainer}>
+              <Image 
+                src={`/images/${src}`}
+                alt='image'
+                fill
+              />
+            </div>
+          })
+        }
+      </motion.div>
+    )
+  }
+
+

@@ -1,0 +1,95 @@
+.dashboard {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard .h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    width: calc(50% - 40px);
+  }
+  
+  .section .h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .stat {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .stat .icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .stat .h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .stat .p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Icon styles */
+  .fas {
+    font-size: 24px;
+    color: #666;
+  }
+  
+  .fas.fa-user {
+    color: #337ab7;
+  }
+  
+  .fas.fa-car {
+    color: #5cb85c;
+  }
+  
+  .fas.fa-taxi {
+    color: #f0ad4e;
+  }
+  
+  .fas.fa-money-bill-wave {
+    color: #d9534f;
+  }
+  
+  .fas.fa-times-circle {
+    color: #d9534f;
+  }
+  
+  .fas.fa-building {
+    color: #337ab7;
+  }
+  
+  .fas.fa-check-circle {
+    color: #5cb85c;
+  }

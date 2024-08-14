@@ -1,0 +1,94 @@
+.scroll-section-outer{
+    overflow: hidden;
+    background: #000;
+}
+.scroll-section-inner{
+    height: 100vh;
+    width: 400vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.scroll-section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-section h3{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1000px;
+    text-transform: uppercase;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  * {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+.one{
+    background-color: #000;
+}
+.two{
+    background-color: #fff;
+}
+.three{
+    background-color: #c52828;
+}
+.four{
+    background-color: #ff0000;
+}
+.five{
+    background-color: #00d9ff;
+}
+
+#component{
+    width: 400vw;
+    height: 50vh;
+    display: flex;
+    width:800vw;
+  }
+  
+  #container{
+    display: flex;
+    width:800vw;
+  }
+
+  .horizontal-scroll-trigger {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+  }
+  
+  .horizontal-scroll-trigger p {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  .horizontal-scroll-trigger p:first-child {
+    margin-left: 0;
+  }
+  
+  .horizontal-scroll-trigger p:last-child {
+    margin-right: 0;
+  }
+
+  .horizontal-scroll-trigger::-webkit-scrollbar {
+    height: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  .horizontal-scroll-trigger::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  
+  .horizontal-scroll-trigger::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }

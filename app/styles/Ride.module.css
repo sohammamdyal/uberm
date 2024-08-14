@@ -1,0 +1,203 @@
+.container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.headM {
+  margin-top: 0;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.buttons {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.buttons button {
+  background-color: #1F51FF;
+  color: #fff;
+  margin-right: 1030px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #007a73;
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+.search label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.search input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form {
+  background-color: #fff;
+  padding: 20px;
+width: 60%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form h2 {
+  margin-top: 0;
+}
+
+.form input[type="text"] {
+  padding: 10px;
+  width: 25%;
+  margin-right: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form button[type="submit"] {
+  background-color: #1F51FF;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #007a73;
+}
+
+.form button[type="button"] {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form button[type="button"]:hover {
+  background-color: #aaa;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.carImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.actionButtons {
+  background-color: #ff0040;
+  color: #fff;
+  border: none;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.actionButton {
+  background-color: #1F51FF;
+  color: #fff;
+  border: none;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.actionButton:hover {
+  background-color: #007a73;
+}
+
+/* notification */
+/* styles/NotificationForm.module.css */
+.notificationForm {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.notificationForm h2 {
+  margin-top: 0;
+}
+
+.notificationForm div {
+  margin-bottom: 10px;
+}
+
+.notificationForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.notificationForm input,
+.notificationForm textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.notificationForm button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.notificationForm button:first-of-type {
+  background-color: #28a745; /* Green */
+}
+
+.notificationForm button:last-of-type {
+  background-color: #dc3545; /* Red */
+}

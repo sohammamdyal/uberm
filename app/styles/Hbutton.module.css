@@ -1,0 +1,39 @@
+.App {
+    background-color: #4b0082;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .materialIcons{
+    color:#000;
+  }
+  
+  .card .h3 {
+    margin-bottom: 10px;
+  }
+  .h3{
+    color:#000;
+  }
+  .p{
+    color:#000;
+  }

@@ -1,0 +1,139 @@
+/* Global Styles */
+
+  
+  /* Container Styles */
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  /* Sidebar Styles */
+  
+  .sidebar {
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar .header .button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .sidebar .header .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .sidebar .searchBar {
+    padding: 10px;
+  }
+  
+  .sidebar .searchBar .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  .sidebar .driversList {
+    padding: 10px;
+  }
+  
+  .sidebar .driverItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .sidebar .driverItem:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .sidebar .driverItem .img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .sidebar .driverInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar .driverInfo .driverName {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .sidebar .driverInfo .driverPhone {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Map Container Styles */
+  
+  .mapContainer {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .mapContainer .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .mapContainer .header .button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .mapContainer .header .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .mapContainer .mapView {
+    padding: 10px;
+  }
+  
+  .mapContainer .mapView .img {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ddd;
+  }
+  
+  .mapContainer .driverDetails {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+  }
+  
+  .mapContainer .driverDetails .p {
+    margin-bottom: 10px;
+  }

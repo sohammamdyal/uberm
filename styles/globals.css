@@ -1,0 +1,261 @@
+/* globals.css */
+
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Set some basic global styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Flex utility classes */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Layout specific styles */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2d3748; /* Changed to gray-800 for a darker background */
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 2rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar button {
+  display: flex;
+  align-items: center;
+  padding: 15px; /* Increased padding */
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  border-radius: 10px; /* Increased border-radius for a softer look */
+  color: rgb(32, 26, 26);
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for smooth animation */
+  font-size: 1.25rem; /* Increased font size */
+}
+
+.sidebar button:hover {
+  background-color: #4a5568; /* Changed to gray-700 for hover effect */
+  transform: translateX(5px); /* Added slight movement on hover */
+}
+
+.sidebar button svg {
+  margin-right: 10px;
+  font-size: 1.5rem; /* Increased icon size */
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.content h1 {
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #2d3748; /* Changed to gray-800 */
+}
+
+.content .section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.content .section h2 {
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2d3748; /* Changed to gray-800 */
+}
+
+/* Additional utility classes for flexbox and alignment */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.stat p {
+  margin: 10px 0 0;
+  font-size: 20px;
+}
+
+/* dash */
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Section Styles */
+
+.section {
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.stat {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat .icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.stat h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Icon Styles */
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  text-align: center;
+  color: #666;
+}
+
+.icon.fa-user {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.icon.fa-car {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.icon.fa-taxi {
+  background-color: #FFC107;
+  color: #fff;
+}
+
+.icon.fa-money-bill-wave {
+  background-color: #8BC34A;
+  color: #fff;
+}
+
+.icon.fa-times-circle {
+  background-color: #F44336;
+  color: #fff;
+}
+
+.icon.fa-building {
+  background-color: #9C27B0;
+  color: #fff;
+}
+
+.icon.fa-check-circle {
+  background-color: #4CAF50;
+  color: #fff;
+}
