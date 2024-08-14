@@ -11,6 +11,10 @@ upload uber clone Registration and login functionality of Driver and Admin role.
 
 https://github.com/user-attachments/assets/42c4616a-05ba-4508-a863-7d51dafbe8ec
 
+upload the uber clone website chatbot feature which helps to navigate the functionality.
+
+https://github.com/user-attachments/assets/134dd18c-29db-44fb-96f1-da307adc538d
+
 upload the uber clone demo screenshots.
 
 ![u1](https://github.com/user-attachments/assets/7b10bc6b-464c-4ebf-9a03-dd65b3ca8fa4)
